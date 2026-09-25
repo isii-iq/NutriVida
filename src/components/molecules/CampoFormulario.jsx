@@ -14,10 +14,7 @@ function CampoFormulario(props) {
         placeholder={props.placeholder}
         required={props.required}
       />
-
-      <span className="text-danger">
-        {props.error}
-      </span>
+      
     </div>
   );
 }
