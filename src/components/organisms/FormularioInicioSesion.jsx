@@ -2,6 +2,7 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import CampoFormulario from "../molecules/CampoFormulario";
 import Boton from "../atoms/Boton";
 
+
 function FormularioInicioSesion() {
 
   function manejarSubmit(event) {
