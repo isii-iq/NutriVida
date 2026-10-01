@@ -1,10 +1,17 @@
 import FormularioInicioSesion from "./components/organisms/FormularioInicioSesion";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import TarjetaServicio from "./components/molecules/TarjetaServicio";
 
 function App() {
   return (
-    <FormularioInicioSesion />
+    <>
+      <FormularioInicioSesion />
+
+
+      <TarjetaServicio
+        duracion={60}
+        textoBoton="Agendar"
+      />
+    </>
   );
 }
 
