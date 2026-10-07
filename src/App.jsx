@@ -1,9 +1,8 @@
 
 import "./App.css";
-import Precio from "./components/atoms/Precio";
 import FormularioInicioSesion from "./components/organisms/FormularioInicioSesion";
 import TarjetaServicio from "./components/molecules/TarjetaServicio";
-import { BrowserRouter, Routes, Route } from "react-router-dom";  
+
 
 
 
@@ -16,11 +15,13 @@ function App() {
       <TarjetaServicio
         duracion={60}
         textoBoton="Agendar"
+        valor="99"
+        periodo="mes"
       />
 
     
       <FormularioInicioSesion />
-      <Precio valor="99" periodo="mes" />
+      
     </>
   );
 }
