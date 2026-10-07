@@ -46,12 +46,6 @@ function Servicios() {
           valor="28.000"
         />
 
-         <TarjetaServicio
-          titulo="Consulta de urgencia / reagendada"
-          duracion={30}
-          textoBoton="Agendar"
-          valor="28.000"
-        />
 
          <TarjetaServicio
           titulo="Plan pérdida de peso"
