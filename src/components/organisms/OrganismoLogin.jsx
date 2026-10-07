@@ -4,7 +4,7 @@ import Boton from "../atoms/Boton";
 import { useNavigate } from "react-router-dom";
 
 
-function FormularioInicioSesion() {
+function OrganismoLogin() {
   const navigate = useNavigate();
 
   function manejarSubmit(event) {
@@ -17,7 +17,7 @@ function FormularioInicioSesion() {
       <Row className="justify-content-center">
         <Col xs={12} md={6} lg={4}>
 
-          <h2>Iniciar sesión</h2>
+          <h2>Login</h2>
 
           <Form onSubmit={manejarSubmit}>
 
@@ -53,4 +53,4 @@ function FormularioInicioSesion() {
   );
 }
 
-export default FormularioInicioSesion;
+export default OrganismoLogin;

@@ -1,16 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FormularioInicioSesion from "./components/organisms/FormularioInicioSesion";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./components/organisms/OrganismoLogin";
 import Servicios from "./pages/Servicios";
 
 function App() {  
   return (
     <BrowserRouter>
       <Routes>
+
+        <Route
+          path="/"
+          element={<Navigate to="/login" replace />}
+        />
      
-        <Route path="/" element={<FormularioInicioSesion />} />
+        <Route path="/login" element={<Login/>} />
         
-        
-        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/servicios" element={<Servicios/>} />
       </Routes>
     </BrowserRouter>
   );
