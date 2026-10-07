@@ -1,12 +1,15 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
 import CampoFormulario from "../molecules/CampoFormulario";
 import Boton from "../atoms/Boton";
+import { useNavigate } from "react-router-dom";
 
 
 function FormularioInicioSesion() {
+  const navigate = useNavigate();
 
   function manejarSubmit(event) {
     event.preventDefault();
+    navigate("/servicios");
   }
 
   return (
