@@ -1,19 +1,24 @@
 import EtiquetaDuracion from "../atoms/EtiquetaDuracion";
 import Boton from "../atoms/Boton";
 import Precio from"../atoms/Precio";
+import "../../App.css";
 
 
-function TarjetaServicio({ titulo,duracion, textoBoton, valor}) {
+function TarjetaServicio({ titulo,duracion, textoBoton, valor, moneda }) {
   return (
-    <div className="d-flex flex-column align-items-start gap-3">
-
-      <h1 className="m-0 fs-5">{titulo}</h1>
+ 
+    <div className="tarjeta-servicio">
+      <h3 className="tarjeta-titulo">{titulo}</h3>
+      
       <EtiquetaDuracion duracion={duracion} />
-
-      <Boton texto={textoBoton} />
-     <Precio valor={valor} />
+      <Precio valor={valor} moneda={moneda} />
+      
+      <div className="tarjeta-contenedor-boton">
+        <Boton texto={textoBoton} />
+      </div>
     </div>
   );
 }
+
 
 export default TarjetaServicio;
