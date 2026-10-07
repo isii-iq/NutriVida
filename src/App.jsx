@@ -1,28 +1,18 @@
-
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FormularioInicioSesion from "./components/organisms/FormularioInicioSesion";
-import TarjetaServicio from "./components/molecules/TarjetaServicio";
-
-
-
-
-
+import Servicios from "./pages/Servicios";
 
 function App() {  
   return (
-    <>
-      
-      <TarjetaServicio
-        duracion={60}
-        textoBoton="Agendar"
-        valor="99"
-        periodo="mes"
-      />
-
-    
-      <FormularioInicioSesion />
-      
-    </>
+    <BrowserRouter>
+      <Routes>
+     
+        <Route path="/" element={<FormularioInicioSesion />} />
+        
+        
+        <Route path="/servicios" element={<Servicios />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

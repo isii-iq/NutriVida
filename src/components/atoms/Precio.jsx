@@ -1,12 +1,16 @@
+import "../../App.css";
 
-function Precio({ valor, moneda = "$"}) {
+
+function Precio(props) {
   return (
     <div className="precio">
-      <span className="precio-simbolo">{moneda}</span>
-      <span className="precio-valor">{valor}</span>
+      <span className="precio-simbolo">{props.moneda}</span>
+      <span className="precio-valor">{props.valor}</span>
       
     </div>
   );
 }
 
 export default Precio;
+
+
