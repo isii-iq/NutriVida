@@ -4,7 +4,7 @@ function Boton(props) {
   return (
     <button
       type={props.type || "button"}
-      className={`btn btn-${variante}`}
+      className={`btn btn-${variante} w-auto`}
       onClick={props.onClick}
     >
       {props.texto}
