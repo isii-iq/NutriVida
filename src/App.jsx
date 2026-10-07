@@ -12,19 +12,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {  
   return (
     <>
-      <FormularioInicioSesion />
-
-
+      
       <TarjetaServicio
         duracion={60}
         textoBoton="Agendar"
       />
-    </>
 
-    <>
-    <FormularioInicioSesion />
-
-    <Precio valor="99" periodo="mes" />
+    
+      <FormularioInicioSesion />
+      <Precio valor="99" periodo="mes" />
     </>
   );
 }
