@@ -9,7 +9,7 @@ function OrganismoLogin() {
 
   function manejarSubmit(event) {
     event.preventDefault();
-    navigate("/servicios");
+    navigate("/TiposServicios");
   }
 
   return (

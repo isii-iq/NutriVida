@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/organisms/OrganismoLogin";
+import TiposServicios from "./pages/TiposServicios";
 import Servicios from "./pages/Servicios";
 
 function App() {  
@@ -14,7 +15,10 @@ function App() {
      
         <Route path="/login" element={<Login/>} />
         
-        <Route path="/servicios" element={<Servicios/>} />
+        <Route path="/TiposServicios" element={<TiposServicios/>} />
+
+        <Route path="/Servicios" element={<Servicios/>} />
+
       </Routes>
     </BrowserRouter>
   );
