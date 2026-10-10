@@ -49,7 +49,7 @@ function Servicios() {
 
          <TarjetaServicio
           titulo="Plan pérdida de peso"
-          duracion={0}
+           duracion={0}
           textoBoton="Agendar"
           valor="170.000"
         />
